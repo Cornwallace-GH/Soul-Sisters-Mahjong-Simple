@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soul Sisters Mahjong (Simple)</title>
+<meta name="description" content="Beginner American Mahjong lessons in Rockwall, Texas with Mindi Potts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#315F62;--terracotta:#C8553D;--plum:#73566F;--cream:#F4F3EE;--gold:#B28A4A;--sand:#D8C8B2;--ink:#293536;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Montserrat',Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);font-size:16px;line-height:1.65}
+h1,h2{font-family:var(--serif);font-weight:600;color:var(--teal);line-height:1.1}
+h1{font-size:2.6rem}
+h2{font-size:2rem;margin-bottom:.75rem}
+p+p{margin-top:.9rem}
+em{color:var(--terracotta)}
+:focus-visible{outline:3px solid var(--terracotta);outline-offset:3px}
+.wrap{max-width:680px;margin:0 auto;padding:0 1.25rem}
+.label{display:block;font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--plum);margin-bottom:.6rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.75rem 1.5rem;border-radius:999px;border:0;background:var(--terracotta);color:#fff;font:600 .95rem var(--sans);text-decoration:none;cursor:pointer}
+.btn:hover{background:#b04732}
+
+header{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;max-width:1080px;margin:0 auto}
+.logo-slot{height:44px;padding:0 .9rem;display:flex;align-items:center;border:1.5px dashed var(--gold);border-radius:10px;font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.brand{display:flex;align-items:center;gap:.5rem;text-decoration:none}
+.brand-icon{height:46px;width:auto;display:block}
+.brand-word{height:30px;width:auto;display:block}
+header .btn{min-height:44px;padding:.5rem 1.1rem;font-size:.85rem}
+
+.hero{position:relative;overflow:hidden;padding:2.5rem 0 3rem}
+.hero .wave{position:absolute;top:0;right:0;width:70%;max-width:520px;z-index:0}
+.hero .wrap{position:relative;z-index:1}
+.hero p{margin:1rem 0 1.5rem;font-size:1.05rem}
+
+section{padding:3rem 0;border-top:1px solid rgba(178,138,74,.4)}
+.lesson{background:var(--teal);color:var(--cream);border-top:0}
+.lesson h2{color:var(--cream)}
+.lesson .label{color:#E9B6A5}
+.prices{display:flex;gap:2rem;margin:1.25rem 0}
+.price{font-family:var(--serif);font-size:2.6rem;font-weight:600;color:#E9B6A5;line-height:1}
+.price small{display:block;font-family:var(--sans);font-size:.8rem;color:var(--cream);margin-top:.35rem}
+.lesson ul{list-style:none;margin-bottom:1.5rem}
+.lesson li{padding:.5rem 0;border-top:1px solid rgba(178,138,74,.5)}
+
+form{display:grid;gap:1rem;margin-top:1.25rem}
+label{display:block;font-weight:600;font-size:.9rem;margin-bottom:.3rem}
+input,textarea{width:100%;font:inherit;padding:.75rem .9rem;min-height:48px;border:1.5px solid var(--sand);border-radius:10px;background:#fff;color:var(--ink)}
+input:focus,textarea:focus{border-color:var(--teal);outline:none;box-shadow:0 0 0 3px rgba(49,95,98,.2)}
+form .btn{justify-self:start}
+#form-msg{display:none;padding:.9rem 1rem;background:#fff;border-left:4px solid var(--terracotta);border-radius:8px}
+
+footer{text-align:center;padding:2rem 1.25rem;font-size:.85rem;color:#53605f}
+footer .tag{font-family:var(--serif);font-size:1.3rem;color:var(--plum);margin-bottom:.25rem}
+
+@media (min-width:760px){.brand-word{height:42px}h1{font-size:3.75rem}h2{font-size:2.6rem}.hero{padding:5rem 0 4.5rem}section{padding:4.5rem 0}}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="#" class="brand" aria-label="Soul Sisters Mahjong"><img src="assets/ssm-icon.png" alt="" class="brand-icon" width="142" height="240"><img src="assets/ssm-wordmark.png" alt="Soul Sisters Mahjong" class="brand-word" width="900" height="241"></a>
+  <a href="#contact" class="btn book">Book a Lesson</a>
+</header>
+
+<main>
+<div class="hero">
+  <svg class="wave" viewBox="0 0 600 260" aria-hidden="true">
+    <path d="M600 0H120c40 60 140 70 230 60 90-10 150 40 170 110 15 50 50 80 80 90z" fill="#73566F"/>
+    <path d="M600 0H300c20 40 90 40 150 50 70 12 110 60 120 120 5 30 15 50 30 60z" fill="#C8553D"/>
+    <path d="M120 0c40 60 140 70 230 60 90-10 150 40 170 110 15 50 50 80 80 90" fill="none" stroke="#B28A4A" stroke-width="1.5"/>
+  </svg>
+  <div class="wrap">
+    <span class="label">Soul Sisters Mahjong</span>
+    <h1>Come for the Mahjong. <em>Stay for the Connection.</em></h1>
+    <p>Beginner American Mahjong lessons in Rockwall, Texas. Small groups, plenty of questions, lots of laughter.</p>
+    <a href="#contact" class="btn book">Find Your Lesson</a>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <span class="label">About</span>
+    <h2>Hi, I'm Mindi.</h2>
+    <p>Soul Sisters began with a friendship more than 25 years strong, and a belief that the best part of the game is who you meet at the table.</p>
+    <p>I teach beginners that Mahjong doesn't have to be intimidating. You don't need to know a thing before you arrive. Just bring your curiosity.</p>
+  </div>
+</section>
+
+<section class="lesson">
+  <div class="wrap">
+    <span class="label">Mahjong 101</span>
+    <h2>Your seat at the table.</h2>
+    <p>A three-hour beginner lesson covering the tiles, the card, the Charleston, and real gameplay.</p>
+    <div class="prices">
+      <div class="price">$55<small>with 2026 card</small></div>
+      <div class="price">$35<small>lesson only</small></div>
+    </div>
+    <ul>
+      <li>4 students maximum</li>
+      <li>Snacks and drinks provided</li>
+      <li>Rockwall home; address shared after booking</li>
+      <li>Friendly French bulldog on site</li>
+    </ul>
+    <p>Want a lesson at your home for your own group? Ask below.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <span class="label">Contact</span>
+    <h2>Save your seat.</h2>
+    <p>Send a note and Mindi will reply with available dates.</p>
+    <form id="form" novalidate>
+      <div><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name"></div>
+      <div><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+      <div><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="4" placeholder="Preferred date, group size, small group or hosted"></textarea></div>
+      <button class="btn" type="submit">Send</button>
+      <div id="form-msg" role="status"></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <img src="assets/ssm-icon.png" alt="" width="142" height="240" style="height:56px;width:auto;margin-bottom:.75rem">
+  <p class="tag">Mahjong &bull; Sisterhood &bull; Connection</p>
+  <p>Rockwall, Texas &middot; &copy; <span id="yr"></span> Soul Sisters Mahjong</p>
+</footer>
+
+<script>
+// Paste Mindi's Calendly link between the quotes to send Book buttons there instead of the form.
+const CALENDLY_URL = "";
+if (CALENDLY_URL) document.querySelectorAll(".book").forEach(a => { a.href = CALENDLY_URL; a.target = "_blank"; a.rel = "noopener"; });
+
+document.getElementById("form").addEventListener("submit", e => {
+  e.preventDefault();
+  const f = e.target, m = document.getElementById("form-msg");
+  m.textContent = (!f.name.value.trim() || !/^\S+@\S+\.\S+$/.test(f.email.value))
+    ? "Please add your name and a valid email."
+    : "Thank you! This is a preview, so the form isn't connected yet. Nothing was sent.";
+  m.style.display = "block";
+});
+document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
